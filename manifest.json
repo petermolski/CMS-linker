@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube CMS Video ID Linkifier",
+  "version": "1.0.0",
+  "description": "Converts YouTube CMS video ID text into copyable YouTube watch links.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
